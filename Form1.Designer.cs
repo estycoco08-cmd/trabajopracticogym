@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtnombre = new TextBox();
-            txtedad = new TextBox();
-            chkestudiante = new CheckBox();
-            cboplan = new ComboBox();
-            cboturno = new ComboBox();
-            txtmeses = new TextBox();
-            chkcasillero = new CheckBox();
-            rdtefectivo = new RadioButton();
-            rdttarjeta = new RadioButton();
-            cbocuotas = new ComboBox();
-            btnlimpiar = new Button();
-            btncalcular = new Button();
+            txtNombre = new TextBox();
+            txtEdad = new TextBox();
+            chkEstudiante = new CheckBox();
+            cboPlan = new ComboBox();
+            cboTurno = new ComboBox();
+            txtMeses = new TextBox();
+            chkCasillero = new CheckBox();
+            rbtEfectivo = new RadioButton();
+            rdtTarjeta = new RadioButton();
+            cboCuotas = new ComboBox();
+            btnLimpiar = new Button();
+            btnCalcular = new Button();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -55,108 +55,113 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // txtnombre
+            // txtNombre
             // 
-            txtnombre.Location = new Point(136, 47);
-            txtnombre.Name = "txtnombre";
-            txtnombre.Size = new Size(100, 23);
-            txtnombre.TabIndex = 0;
+            txtNombre.Location = new Point(136, 47);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(100, 23);
+            txtNombre.TabIndex = 0;
             // 
-            // txtedad
+            // txtEdad
             // 
-            txtedad.Location = new Point(136, 78);
-            txtedad.Name = "txtedad";
-            txtedad.Size = new Size(100, 23);
-            txtedad.TabIndex = 1;
+            txtEdad.Location = new Point(136, 78);
+            txtEdad.Name = "txtEdad";
+            txtEdad.Size = new Size(100, 23);
+            txtEdad.TabIndex = 1;
             // 
-            // chkestudiante
+            // chkEstudiante
             // 
-            chkestudiante.AutoSize = true;
-            chkestudiante.Location = new Point(139, 112);
-            chkestudiante.Name = "chkestudiante";
-            chkestudiante.Size = new Size(15, 14);
-            chkestudiante.TabIndex = 2;
-            chkestudiante.UseVisualStyleBackColor = true;
+            chkEstudiante.AutoSize = true;
+            chkEstudiante.Location = new Point(139, 112);
+            chkEstudiante.Name = "chkEstudiante";
+            chkEstudiante.Size = new Size(15, 14);
+            chkEstudiante.TabIndex = 2;
+            chkEstudiante.UseVisualStyleBackColor = true;
             // 
-            // cboplan
+            // cboPlan
             // 
-            cboplan.FormattingEnabled = true;
-            cboplan.Location = new Point(136, 152);
-            cboplan.Name = "cboplan";
-            cboplan.Size = new Size(121, 23);
-            cboplan.TabIndex = 3;
+            cboPlan.FormattingEnabled = true;
+            cboPlan.Items.AddRange(new object[] { "Musculacion", "Funcional", "Natacion" });
+            cboPlan.Location = new Point(136, 152);
+            cboPlan.Name = "cboPlan";
+            cboPlan.Size = new Size(121, 23);
+            cboPlan.TabIndex = 3;
             // 
-            // cboturno
+            // cboTurno
             // 
-            cboturno.FormattingEnabled = true;
-            cboturno.Location = new Point(136, 185);
-            cboturno.Name = "cboturno";
-            cboturno.Size = new Size(121, 23);
-            cboturno.TabIndex = 4;
+            cboTurno.FormattingEnabled = true;
+            cboTurno.Items.AddRange(new object[] { "mañana", "tarde", "noche" });
+            cboTurno.Location = new Point(136, 185);
+            cboTurno.Name = "cboTurno";
+            cboTurno.Size = new Size(121, 23);
+            cboTurno.TabIndex = 4;
             // 
-            // txtmeses
+            // txtMeses
             // 
-            txtmeses.Location = new Point(136, 220);
-            txtmeses.Name = "txtmeses";
-            txtmeses.Size = new Size(100, 23);
-            txtmeses.TabIndex = 5;
+            txtMeses.Location = new Point(136, 220);
+            txtMeses.Name = "txtMeses";
+            txtMeses.Size = new Size(100, 23);
+            txtMeses.TabIndex = 5;
             // 
-            // chkcasillero
+            // chkCasillero
             // 
-            chkcasillero.AutoSize = true;
-            chkcasillero.Location = new Point(139, 264);
-            chkcasillero.Name = "chkcasillero";
-            chkcasillero.Size = new Size(15, 14);
-            chkcasillero.TabIndex = 6;
-            chkcasillero.UseVisualStyleBackColor = true;
+            chkCasillero.AutoSize = true;
+            chkCasillero.Location = new Point(139, 264);
+            chkCasillero.Name = "chkCasillero";
+            chkCasillero.Size = new Size(15, 14);
+            chkCasillero.TabIndex = 6;
+            chkCasillero.UseVisualStyleBackColor = true;
             // 
-            // rdtefectivo
+            // rbtEfectivo
             // 
-            rdtefectivo.AutoSize = true;
-            rdtefectivo.Location = new Point(12, 327);
-            rdtefectivo.Name = "rdtefectivo";
-            rdtefectivo.Size = new Size(77, 19);
-            rdtefectivo.TabIndex = 7;
-            rdtefectivo.TabStop = true;
-            rdtefectivo.Text = "EFECTIVO";
-            rdtefectivo.UseVisualStyleBackColor = true;
+            rbtEfectivo.AutoSize = true;
+            rbtEfectivo.Location = new Point(12, 327);
+            rbtEfectivo.Name = "rbtEfectivo";
+            rbtEfectivo.Size = new Size(77, 19);
+            rbtEfectivo.TabIndex = 7;
+            rbtEfectivo.TabStop = true;
+            rbtEfectivo.Text = "EFECTIVO";
+            rbtEfectivo.UseVisualStyleBackColor = true;
             // 
-            // rdttarjeta
+            // rdtTarjeta
             // 
-            rdttarjeta.AutoSize = true;
-            rdttarjeta.Location = new Point(112, 327);
-            rdttarjeta.Name = "rdttarjeta";
-            rdttarjeta.Size = new Size(70, 19);
-            rdttarjeta.TabIndex = 8;
-            rdttarjeta.TabStop = true;
-            rdttarjeta.Text = "TARJETA";
-            rdttarjeta.UseVisualStyleBackColor = true;
+            rdtTarjeta.AutoSize = true;
+            rdtTarjeta.Location = new Point(112, 327);
+            rdtTarjeta.Name = "rdtTarjeta";
+            rdtTarjeta.Size = new Size(70, 19);
+            rdtTarjeta.TabIndex = 8;
+            rdtTarjeta.TabStop = true;
+            rdtTarjeta.Text = "TARJETA";
+            rdtTarjeta.UseVisualStyleBackColor = true;
             // 
-            // cbocuotas
+            // cboCuotas
             // 
-            cbocuotas.FormattingEnabled = true;
-            cbocuotas.Location = new Point(73, 362);
-            cbocuotas.Name = "cbocuotas";
-            cbocuotas.Size = new Size(40, 23);
-            cbocuotas.TabIndex = 9;
+            cboCuotas.FormattingEnabled = true;
+            cboCuotas.Items.AddRange(new object[] { "1", "3", "6" });
+            cboCuotas.Location = new Point(64, 362);
+            cboCuotas.Name = "cboCuotas";
+            cboCuotas.Size = new Size(40, 23);
+            cboCuotas.TabIndex = 9;
             // 
-            // btnlimpiar
+            // btnLimpiar
             // 
-            btnlimpiar.Location = new Point(88, 415);
-            btnlimpiar.Name = "btnlimpiar";
-            btnlimpiar.Size = new Size(75, 23);
-            btnlimpiar.TabIndex = 10;
-            btnlimpiar.Text = "LIMPIAR";
-            btnlimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Location = new Point(88, 415);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(75, 23);
+            btnLimpiar.TabIndex = 10;
+            btnLimpiar.Text = "LIMPIAR";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnlimpiar_Click;
             // 
-            // btncalcular
+            // btnCalcular
             // 
-            btncalcular.Location = new Point(182, 415);
-            btncalcular.Name = "btncalcular";
-            btncalcular.Size = new Size(75, 23);
-            btncalcular.TabIndex = 11;
-            btncalcular.Text = "CALCULAR";
-            btncalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Location = new Point(182, 415);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(75, 23);
+            btnCalcular.TabIndex = 11;
+            btnCalcular.Text = "CALCULAR";
+            btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // label1
             // 
@@ -270,7 +275,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(398, 450);
+            ClientSize = new Size(426, 445);
             Controls.Add(pictureBox1);
             Controls.Add(label11);
             Controls.Add(lbledad);
@@ -283,20 +288,21 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(btncalcular);
-            Controls.Add(btnlimpiar);
-            Controls.Add(cbocuotas);
-            Controls.Add(rdttarjeta);
-            Controls.Add(rdtefectivo);
-            Controls.Add(chkcasillero);
-            Controls.Add(txtmeses);
-            Controls.Add(cboturno);
-            Controls.Add(cboplan);
-            Controls.Add(chkestudiante);
-            Controls.Add(txtedad);
-            Controls.Add(txtnombre);
+            Controls.Add(btnCalcular);
+            Controls.Add(btnLimpiar);
+            Controls.Add(cboCuotas);
+            Controls.Add(rdtTarjeta);
+            Controls.Add(rbtEfectivo);
+            Controls.Add(chkCasillero);
+            Controls.Add(txtMeses);
+            Controls.Add(cboTurno);
+            Controls.Add(cboPlan);
+            Controls.Add(chkEstudiante);
+            Controls.Add(txtEdad);
+            Controls.Add(txtNombre);
             Name = "frminscripcion";
             Text = "Form1";
+            Load += frminscripcion_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -304,18 +310,18 @@
 
         #endregion
 
-        private TextBox txtnombre;
-        private TextBox txtedad;
-        private CheckBox chkestudiante;
-        private ComboBox cboplan;
-        private ComboBox cboturno;
-        private TextBox txtmeses;
-        private CheckBox chkcasillero;
-        private RadioButton rdtefectivo;
-        private RadioButton rdttarjeta;
-        private ComboBox cbocuotas;
-        private Button btnlimpiar;
-        private Button btncalcular;
+        private TextBox txtNombre;
+        private TextBox txtEdad;
+        private CheckBox chkEstudiante;
+        private ComboBox cboPlan;
+        private ComboBox cboTurno;
+        private TextBox txtMeses;
+        private CheckBox chkCasillero;
+        private RadioButton rbtEfectivo;
+        private RadioButton rdtTarjeta;
+        private ComboBox cboCuotas;
+        private Button btnLimpiar;
+        private Button btnCalcular;
         private Label label1;
         private Label label2;
         private Label label3;
