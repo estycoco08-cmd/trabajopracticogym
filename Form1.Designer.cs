@@ -36,7 +36,7 @@
             txtMeses = new TextBox();
             chkCasillero = new CheckBox();
             rbtEfectivo = new RadioButton();
-            rdtTarjeta = new RadioButton();
+            rBtTarjeta = new RadioButton();
             cboCuotas = new ComboBox();
             btnLimpiar = new Button();
             btnCalcular = new Button();
@@ -117,7 +117,7 @@
             rbtEfectivo.AutoSize = true;
             rbtEfectivo.Location = new Point(12, 327);
             rbtEfectivo.Name = "rbtEfectivo";
-            rbtEfectivo.Size = new Size(77, 19);
+            rbtEfectivo.Size = new Size(76, 19);
             rbtEfectivo.TabIndex = 7;
             rbtEfectivo.TabStop = true;
             rbtEfectivo.Text = "EFECTIVO";
@@ -125,20 +125,20 @@
             // 
             // rdtTarjeta
             // 
-            rdtTarjeta.AutoSize = true;
-            rdtTarjeta.Location = new Point(112, 327);
-            rdtTarjeta.Name = "rdtTarjeta";
-            rdtTarjeta.Size = new Size(70, 19);
-            rdtTarjeta.TabIndex = 8;
-            rdtTarjeta.TabStop = true;
-            rdtTarjeta.Text = "TARJETA";
-            rdtTarjeta.UseVisualStyleBackColor = true;
+            rBtTarjeta.AutoSize = true;
+            rBtTarjeta.Location = new Point(112, 327);
+            rBtTarjeta.Name = "rBtTarjeta";
+            rBtTarjeta.Size = new Size(68, 19);
+            rBtTarjeta.TabIndex = 8;
+            rBtTarjeta.TabStop = true;
+            rBtTarjeta.Text = "TARJETA";
+            rBtTarjeta.UseVisualStyleBackColor = true;
             // 
             // cboCuotas
             // 
             cboCuotas.FormattingEnabled = true;
             cboCuotas.Items.AddRange(new object[] { "1", "3", "6" });
-            cboCuotas.Location = new Point(64, 362);
+            cboCuotas.Location = new Point(70, 362);
             cboCuotas.Name = "cboCuotas";
             cboCuotas.Size = new Size(40, 23);
             cboCuotas.TabIndex = 9;
@@ -177,7 +177,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(45, 111);
             label2.Name = "label2";
-            label2.Size = new Size(75, 15);
+            label2.Size = new Size(73, 15);
             label2.TabIndex = 13;
             label2.Text = "ESTUDIANTE";
             // 
@@ -203,7 +203,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(73, 188);
             label5.Name = "label5";
-            label5.Size = new Size(47, 15);
+            label5.Size = new Size(46, 15);
             label5.TabIndex = 16;
             label5.Text = "TURNO";
             // 
@@ -212,7 +212,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(-1, 223);
             label6.Name = "label6";
-            label6.Size = new Size(121, 15);
+            label6.Size = new Size(120, 15);
             label6.TabIndex = 17;
             label6.Text = "CANTIDAD DE MESES";
             // 
@@ -257,7 +257,7 @@
             label11.AutoSize = true;
             label11.Location = new Point(12, 365);
             label11.Name = "label11";
-            label11.Size = new Size(54, 15);
+            label11.Size = new Size(53, 15);
             label11.TabIndex = 22;
             label11.Text = "CUOTAS:";
             // 
@@ -291,7 +291,7 @@
             Controls.Add(btnCalcular);
             Controls.Add(btnLimpiar);
             Controls.Add(cboCuotas);
-            Controls.Add(rdtTarjeta);
+            Controls.Add(rBtTarjeta);
             Controls.Add(rbtEfectivo);
             Controls.Add(chkCasillero);
             Controls.Add(txtMeses);
@@ -318,7 +318,7 @@
         private TextBox txtMeses;
         private CheckBox chkCasillero;
         private RadioButton rbtEfectivo;
-        private RadioButton rdtTarjeta;
+        private RadioButton rBtTarjeta;
         private ComboBox cboCuotas;
         private Button btnLimpiar;
         private Button btnCalcular;
